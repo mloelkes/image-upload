@@ -1,0 +1,12 @@
+<h1>All Movies 🚀</h1>
+{{#each movies}}
+	<h2>{{title}}</h2>
+	<h4>{{description}}</h4>
+	<img src="{{imgPath}}" alt="Poster for {{title}}" height="200px">
+	<h3>Delete this movie 
+		<a href="/movie/delete/{{_id}}">❌</a>
+	</h3>
+{{else}}
+	<h2>There are no movies yet 🙀</h2>
+{{/each}}
+<a href="/movie/add">Add a movie</a>

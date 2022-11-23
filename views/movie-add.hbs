@@ -1,0 +1,14 @@
+<h1>Add a movie</h1>
+{{!-- the enctype is needed for the form to be able to send files --}}
+<form action="/movies" method="POST" enctype="multipart/form-data">
+	<label for="">Title: </label>
+	<input type="text" name="title">
+
+	<label for="">Description: </label>
+	<input type="text" name="description">
+
+	<label for="">Poster: </label>
+	<input type="file" name="poster">
+
+	<button type="submit">Add this movie</button>
+</form>
